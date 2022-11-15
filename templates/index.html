@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><img src="/static/img/logo.jpg"></li>
+            <li>
+                <h1 class="title">Minor Project</h1>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="center">
+
+            <h2>Get Your Video Summarization by clicking on below button</h2>
+            <p>Summerize your Video</p>
+            <button class="box1">
+                <a href="{{url_for('video')}}">
+                    <h1 class="name-head">Video Summarizer</h1>
+                </a>
+            </button>
+
+        </div>
+    </div>
+        <!--creating a class container which will hold card class and again card will hold imgbox class-->
+	<div class="team">
+		<div class="card">
+            <div class="imgbox">
+                <img src="/static/img/yash.jpeg" alt="">
+            </div>
+			<div class="content">
+				<!--heading of the card-->
+				<h1 class="name">Yash Gupta</h1>
+				<!--content of the card-->
+                <p>
+					Student Of SKIT College
+				</p>
+			</div>
+		</div>
+        <div class="card">
+            <div class="imgbox">
+                <img src="/static/img/vikalp.jpeg" alt="">
+            </div>
+			<div class="content">
+				<!--heading of the card-->
+				<h1 class="name">Vikalp Jain</h1>
+				<!--content of the card-->
+                <p>
+					Student Of SKIT College
+				</p>
+			</div>
+		</div>
+        <div class="card">
+            <div class="imgbox">
+                <img src="/static/img/vikas.jpeg" alt="">
+            </div>
+			<div class="content">
+				<!--heading of the card-->
+				<h1 class="name">Vikas Kumar Prasad</h1>
+				<!--content of the card-->
+                <p>
+					Student Of SKIT College
+				</p>
+			</div>
+		</div>
+        <div class="card">
+            <div class="imgbox">
+                <img src="/static/img/vishal.jpeg" alt="">
+            </div>
+			<div class="content">
+				<!--heading of the card-->
+				<h1 class="name">Vishal Kumar Nama</h1>
+				<!--content of the card-->
+                <p>
+					Student Of SKIT College
+				</p>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

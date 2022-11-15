@@ -1,0 +1,44 @@
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>College Project</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/video.css') }}">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+         <nav>
+            <ul>
+                <li><img class="img" src="\static\img\logo.jpg"></li>
+                <li>
+                    <h1 class="title">Minor Project</h1>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+		<div class="content" >
+            <img src="../static/img/summary.jpeg" width="300px" height="200px" />
+            <h1>Video - Text Summarization</h1>
+            <p>Give Youtube link to get Video Summarization</p>
+            <form action="/video" method="post" class="form">
+                <div class="row">
+                    <input placeholder="Enter Video Url" type="text" name="url" id="url">
+
+                    <button class="btn" type="submit" name="submit" id="submit">Get Summary</button> `
+                </div>
+            </form>
+	</div>
+	<div class="loader">
+	
+	</div>
+        </div>
+
+</body>
+
+</html>
