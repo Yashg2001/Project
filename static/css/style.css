@@ -14,12 +14,13 @@
             margin: auto;
             text-align: center;
         }
-
+		
         img {
-            margin-left: 30px;
-            margin-top: 20px;
+            margin-left: 10px;
+            margin-top: 0px;
             border-radius: 50%;
-            width: 60px;
+            width: 100px;
+			margin-bottom: 10px;
         }
 
         ul {
@@ -32,6 +33,7 @@
             margin-left: 10px;
             margin-top: 30px;
             font-size: 30px;
+			color:white;
         }
 
         .container {
@@ -52,13 +54,14 @@
         }
 
         .center h2 {
-            color: rgb(142, 80, 242);
+            /*color: rgb(142, 80, 242);*/
+			color: rgb(66, 34, 83);
             /* color: rgb(0, 255, 13); */
             font-size: 40px;
         }
 
         .center p {
-            color: white;
+            color: rgb(66, 34, 83);
             font-size: 40px;
             font-weight: bold;
 
@@ -66,14 +69,14 @@
 
 
         .box1 {
-            margin-top: 30px;
-            width: 300px;
-            height: 40px;
-            font-size: 10px;
+            margin-top: 60px;
+            width: 220px;
+            height: 60px;
+            font-size: 11px;
             /* padding: 10px 10px 10px 10px; */
             border: none;
-            border-radius: 40px;
-            background: rgb(96, 144, 220);
+            border-radius: 25px;
+            background: rgb(2, 183, 206);
             padding: 10px;
         }
 
@@ -84,15 +87,15 @@
         }
 
         .box1:hover {
-            background: crimson;
+            background: rgb(12,15,21);
         }
 
         .row{
             display:flex;
         }
-        
+
         /*apply css properties to container class*/
-        
+
         .team {
             position: relative;
             display: flex;
@@ -102,14 +105,14 @@
             padding: 35px;
         }
         /*apply css properties to card class*/
-        
+
         .name
         {
             font-size: 20px;
         }
         .card {
             height: 100px;
-            max-width: 150px;
+            max-width: 120px;
             position: relative;
             margin: 30px 30px 30px 40px;
             padding: 20px 15px;
@@ -120,9 +123,9 @@
             border-radius: 40px;
         }
         /*apply css properties to card class when it get pointed by cursor*/
-        
+
         .team .card:hover {
-            height: 60px;
+            height: 160px;
         }
         /*apply css properties to imgbox class*/
         .containe .card .imgbox {
@@ -133,7 +136,7 @@
             left: 20px;
         }
         /*Apply css properties to img tag*/
-         
+
         .container .card .imgbox img {
             max-width: 100%;
             border-radius: 4px;
@@ -146,9 +149,9 @@
             left: 20px;
         }
         /*apply css properties to img tag*/
-        
+
         /*apply css properties to content class*/
-        
+
         .team .card .content {
             position: relative;
             margin-top: -50px;
@@ -160,7 +163,7 @@
             transition: 0.3s ease-in-out;
         }
         /*apply css properties to content when card gets hovered*/
-        
+
         .team .card:hover .content {
             visibility: visible;
             opacity: 1;

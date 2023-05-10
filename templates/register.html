@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><img src="/static/img/logo.jpg"></li>
+            <li>
+                <h1 class="title">Major Project</h1>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container mt-5">
+       <h1>Register</h1>
+
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="card">
+              <div class="card-body">
+
+                <!-- Makes POST request to /register route -->
+                <form action="{{ url_for('register') }}" method="POST" id="register-form">
+				  <div class="form-group">
+                    <label for="email">User Name</label>
+                    <input id="username" type="text" class="form-control" name="username" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" class="form-control" name="email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input id="password" type="password" class="form-control" name="password" required>
+                  </div>
+				  <div class="form-group">
+                    <label for="password">Confirm Password</label>
+                    <input id="confirmpassword" type="password" class="form-control" name="confirmpassword" required>
+                  </div>
+                  <button type="submit" class="btn btn-dark">Register</button>
+                  <a href="/login"><button type="button" class="btn btn-dark">Login</button></a>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="footer-padding">
+      <div class="footer">
+        <p>VIS</p>
+      </div>
+    </div>
+
+</body>
+</html>

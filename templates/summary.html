@@ -26,8 +26,8 @@
         <h1>Our Auto Generated Summary</h1>
         <div class="row">
             <div class="col-1">
-			<iframe name="iframe_a" height="382px" width="679px" title="Iframe Example" allowfullscreen></iframe>
-               <a href="https://www.youtube.com/embed/{{url.split('&')[0].split("=")[1]}}" allowfullscreen target="iframe_a"><button type="submit">Press</button></a>
+			<iframe height="400px" width="700px" src="https://www.youtube.com/embed/{{url.split('&')[0].split("=")[1]}}" allowfullscreen></iframe>
+               
                 {%for word in sumi%}
                 <p class="main-word"><strong>{{word}} </strong></p>
                 <span class="summary">{{sumi[word]}}</span>
@@ -35,6 +35,8 @@
             </div>
         </div>
     </div>
+	
+	
 </body>
 
 </html>

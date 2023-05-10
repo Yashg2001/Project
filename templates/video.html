@@ -22,7 +22,7 @@
             </ul>
         </nav>
         <div class="container">
-		<div class="content" >
+		<div id="content" >
             <img src="../static/img/summary.jpeg" width="300px" height="200px" />
             <h1>Video - Text Summarization</h1>
             <p>Give Youtube link to get Video Summarization</p>
@@ -30,15 +30,105 @@
                 <div class="row">
                     <input placeholder="Enter Video Url" type="text" name="url" id="url">
 
-                    <button class="btn" type="submit" name="submit" id="submit">Get Summary</button> `
+                    <button class="btn" type="submit" name="submit" id="submit">Get Summary</button> 
                 </div>
             </form>
 	</div>
-	<div class="loader">
-	
+	<div id="loader">
+		<div class="preloader">
+  <div class="preloader__ring">
+    <div class="preloader__sector">L</div>
+    <div class="preloader__sector">o</div>
+    <div class="preloader__sector">a</div>
+    <div class="preloader__sector">d</div>
+    <div class="preloader__sector">i</div>
+    <div class="preloader__sector">n</div>
+    <div class="preloader__sector">g</div>
+    <div class="preloader__sector">.</div>
+    <div class="preloader__sector">.</div>
+    <div class="preloader__sector">.</div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+  </div>
+  <div class="preloader__ring">
+    <div class="preloader__sector">L</div>
+    <div class="preloader__sector">o</div>
+    <div class="preloader__sector">a</div>
+    <div class="preloader__sector">d</div>
+    <div class="preloader__sector">i</div>
+    <div class="preloader__sector">n</div>
+    <div class="preloader__sector">g</div>
+    <div class="preloader__sector">.</div>
+    <div class="preloader__sector">.</div>
+    <div class="preloader__sector">.</div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+    <div class="preloader__sector"></div>
+  </div>
+</div>
 	</div>
         </div>
 
 </body>
+<script>
+	/*const one = document.getElementById("content");
+	const second = document.getElementById("submit");
+	const third = document.getElementById("loader");
+	third.style.display = 'none'
+	console.log(one,second,third)
+	third.style.display=none;
+	second.addEventListener('click'() => {
+		one.style.display = 'none';
+		third.style.display ="inline";
+	});*/
+	const content = document.querySelector('#content');
+    const submit  = document.querySelector('#submit');
+    const loader = document.querySelector('#loader');
+     loader.style.display = 'none';
+    
+    submit.onclick = async () =>{
+        console.log("Form Submited")
+        content.style.display = 'none'
+        loader.style.display = 'flex'
+        await content.submit();
+        
+    } 
+</script>
+
 
 </html>
