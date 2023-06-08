@@ -1,8 +1,8 @@
 <h1 align="center">
-Sentiment Analysis for Hindi
+Video Indexing & Summarization
 </h1>
 
-Accurate sentiment analysis for your documents and text in Hindi.
+Accurate summarization and keywords detection with Info
 
 ## 💻 Running Locally
 
